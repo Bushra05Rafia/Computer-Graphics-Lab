@@ -7,60 +7,38 @@ float t=-45;
 float tx=0.5,ty=0.5;
 void display(void)
 {
-    /* Tranlation
-    */
-    glBegin(GL_QUADS);
-    glColor3f(1,0,0);
-    glVertex2f(0.2-0.3,0.2-0.5);
-    glColor3f(0,1,0);
-    glVertex2f(-0.2-0.3,0.2-0.5);
-    glColor3f(0,0,1);
-    glVertex2f(-0.2-0.3,-0.2-0.5);
-    glColor3f(1,0.5,0.5);
-    glVertex2f(0.2-0.3,-0.2-0.5);
-    glEnd();
-
-
     /* rotation
     */
     float temp=xa;
     xa=xa*cos(t)-ya*sin(t);
     ya=temp*sin(t)+ya*cos(t);
+
     temp=xb;
     xb=xb*cos(t)-yb*sin(t);
     yb=temp*sin(t)+yb*cos(t);
+
     temp=xc;
     xc=xc*cos(t)-yc*sin(t);
     yc=temp*sin(t)+yc*cos(t);
+
     temp=xd;
     xd=xd*cos(t)-yd*sin(t);
     yd=temp*sin(t)+yd*cos(t);
+
     glBegin(GL_QUADS);
     glColor3f(1,0,0);
-    glVertex2f(xa,ya);
+    glVertex2f(xa+.2,ya+.2);
+
     glColor3f(0,1,0);
-    glVertex2f(xb,yb);
+    glVertex2f(xb+.2,yb+.2);
+
     glColor3f(0,0,1);
-    glVertex2f(xc,yc);
+    glVertex2f(xc+.2,yc+.2);
+
     glColor3f(1,0.5,0.5);
-    glVertex2f(xd,yd);
+    glVertex2f(xd+.2,yd+.2);
+
     glEnd();
-
-
-    /* Scalling
-    */
-    glBegin(GL_QUADS);
-    glColor3f(1,0,0);
-    glVertex2f(xa*tx,ya*ty);
-    glColor3f(0,1,0);
-    glVertex2f(xb*tx,yb*ty);
-    glColor3f(0,0,1);
-    glVertex2f(xc*tx,yc*ty);
-    glColor3f(1,0.5,0.5);
-    glVertex2f(xd*tx,yd*ty);
-    glEnd();
-
-
     glFlush();
 
 }
