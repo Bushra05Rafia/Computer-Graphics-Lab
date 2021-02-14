@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1612688699 source:g:\semester 4-2\lab -computer graphics, cse-426 (rifat)\computer graphics lab\transformation manually\main.cpp
+1613238327 source:g:\semester 4-2\lab -computer graphics, cse-426 (rifat)\computer graphics lab\transformation manually\main.cpp
 	<windows.h>
 	<GL/glut.h>
 	<math.h>

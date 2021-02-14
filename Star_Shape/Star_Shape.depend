@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1613290578 source:g:\semester 4-2\lab -computer graphics, cse-426 (rifat)\computer graphics lab\rotate quad -along the circumference of the circle\main.cpp
+1613243298 source:g:\semester 4-2\lab -computer graphics, cse-426 (rifat)\computer graphics lab\star_shape\main.cpp
 	<windows.h>
 	<GL/glut.h>
 
@@ -217,7 +217,4 @@
 1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\glu.h
 	<stddef.h>
 	<GL/gl.h>
-
-1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
-	<_mingw.h>
 

@@ -7,6 +7,20 @@ float t=-45;
 float tx=0.5,ty=0.5;
 void display(void)
 {
+    /* Transformation
+    */
+    glBegin(GL_QUADS);
+    glColor3f(1, 0, 0);
+    glVertex2f(xa, ya-0.5);
+    glColor3f(0, 1, 0);
+    glVertex2f(xb, yb-0.5);
+    glColor3f(0, 0, 1);
+    glVertex2f(xc, yc-0.5);
+    glColor3f(1, 0.5, 0.5);
+    glVertex2f(xd, yd-0.5);
+    glEnd();
+    glFlush();
+
     /* rotation
     */
     float temp=xa;
@@ -28,18 +42,31 @@ void display(void)
     glBegin(GL_QUADS);
     glColor3f(1,0,0);
     glVertex2f(xa+.2,ya+.2);
-
     glColor3f(0,1,0);
     glVertex2f(xb+.2,yb+.2);
-
     glColor3f(0,0,1);
     glVertex2f(xc+.2,yc+.2);
-
     glColor3f(1,0.5,0.5);
     glVertex2f(xd+.2,yd+.2);
+    glEnd();
 
+
+    /* scaling
+    */
+    glBegin(GL_QUADS);
+    glColor3f(1, 0, 0);
+    glVertex2f(xa*tx, ya*ty);
+    glColor3f(0, 1, 0);
+    glVertex2f(xb*tx, yb*ty);
+    glColor3f(0, 0, 1);
+    glVertex2f(xc*tx, yc*ty);
+    glColor3f(1, 0.5, 0.5);
+    glVertex2f(xd*tx, yd*ty);
     glEnd();
     glFlush();
+
+
+
 
 }
 
