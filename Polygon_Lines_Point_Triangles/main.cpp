@@ -13,6 +13,7 @@ void display(void)
     glEnd();
 
 
+
     glBegin(GL_POINTS);
     glVertex2f(0,0.5);
     glEnd();
@@ -34,6 +35,7 @@ void display(void)
     glEnd();
     */
 
+    /*
     glColor3f(0.7,0.3,0);
     glBegin(GL_POLYGON);
     glVertex2f(0,0.7);
@@ -43,6 +45,7 @@ void display(void)
     glVertex2f(-0.7,-0.3);
     glVertex2f(-0.7,0.3);
     glEnd();
+    */
 
     glFlush();
 
